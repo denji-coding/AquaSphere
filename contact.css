@@ -167,17 +167,14 @@ section {
 .contact-form .input-box textarea:valid ~ span {
     color: #1da9c0;
     font-size: 12px;
-    transform: translateY(-28px); /* Move span upwards */
+    transform: translateY(-28px);
 }
 
-/* When the input or textarea is empty, the span stays in the default position */
 .contact-form .input-box input[type="email"]:placeholder-shown ~ span,
 .contact-form .input-box input[type="text"]:placeholder-shown ~ span,
 .contact-form .input-box textarea:placeholder-shown ~ span {
-    transform: translateY(0); /* Keep span in the original position */
+    transform: translateY(0); 
 }
-
-
 
 .contact-form .input-box input[type="submit"]
 {
@@ -200,10 +197,9 @@ section {
   color: #00bcd4;
 }
 
-/* Style for footer */
 footer {
     position: relative;
-    background-color: #29B6F6; /* Light blue background */
+    background-color: #29B6F6; 
     padding: 20px;
     text-align: center;
     z-index: 100;
@@ -214,13 +210,13 @@ footer .footer-container {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px; /* Space between sections */
+    gap: 20px; 
 }
 
 footer .footer-item {
     display: flex;
     align-items: center;
-    gap: 10px; /* Space between icon and text */
+    gap: 10px; 
    
 }
 
@@ -230,15 +226,15 @@ footer img {
 }
 
 footer .footer-item a {
-    text-decoration: none; /* Remove underline from links */
-    color: #efefef; /* Link color */
+    text-decoration: none;
+    color: #efefef;
     padding: 5px;
-    font-size: 16px; /* Clickable area padding */
+    font-size: 16px; 
 }
 
 footer a:hover {
-    color: #FFF; /* Hover color for links */
-    text-decoration: underline; /* Add underline on hover */
+    color: #FFF; 
+    text-decoration: underline;
     cursor: pointer;
 }
 
@@ -268,8 +264,7 @@ footer a:hover {
 }
 
 
-/* Responsive for mobile, tablet, and desktop sizes */
-@media (max-width: 600px) { /* Mobile screens */
+@media (max-width: 600px) { 
     .section-header h2 {
       font-size: 2em;
     }
@@ -340,10 +335,7 @@ footer a:hover {
     }
   }
   
-  @media (min-width: 601px) and (max-width: 1024px) { /* Tablet screens */
-    /* .section-header h2 {
-      font-size: 2.5em;
-    } */
+  @media (min-width: 601px) and (max-width: 1024px) {
   
     .contact-info {
       width: 100%;
@@ -394,7 +386,7 @@ footer a:hover {
   }
 }
   
-  @media (min-width: 1025px) { /* Desktop screens */
+  @media (min-width: 1025px) {
     .contact-info {
       width: 50%;
       margin-left: auto;

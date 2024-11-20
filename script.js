@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const navItems = document.querySelectorAll('.nav-links li');
 
     hamburger.addEventListener('click', (event) => {
-        event.stopPropagation(); // Prevent event from propagating to the body click event
+        event.stopPropagation(); 
         hamburger.classList.toggle("active");
         navLinks.classList.toggle('show');
     });
@@ -135,12 +135,10 @@ function copyToClipboard() {
   document.querySelectorAll('.slide').forEach((slide) => {
     slide.addEventListener('mouseenter', () => {
       const image = slide.querySelector('img');
-      // image.style.transform = 'scale(1.15)'; 
     });
   
     slide.addEventListener('mouseleave', () => {
       const image = slide.querySelector('img');
-      // image.style.transform = 'scale(1.05)'; 
     });
   });
   

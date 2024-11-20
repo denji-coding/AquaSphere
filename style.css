@@ -550,6 +550,7 @@ button:hover {
     .slider-container img{
         margin-top: -250px;
         margin-bottom: -90px;
+        margin-left: 100px;
     }
 
     .app-slider {

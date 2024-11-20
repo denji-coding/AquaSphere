@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqua Sphere</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="icon">
+            <img src="logo.png" alt="Explore Paradise Logo" />
+            <!-- <span>Explore Paradise</span> -->
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <!-- Header / Hero Section -->
+    <header id="home" class="hero">
+        <h1>A-QuaTour</h1>
+        <p>Experience breathtaking landscapes, vibrant culture, and unforgettable adventures</p>
+        <a href="#feature" class="cta-button"> Explore Features</a>
+        
+
+        <svg width="100%" height="100%" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" overflow="auto" shape-rendering="auto" fill="#ffffff">
+            <defs>
+             <path id="wavepath" d="M 0 2000 0 500 Q 136.5 403 273 500 t 273 0 273 0 273 0 273 0 273 0  v1000 z" />
+             <path id="motionpath" d="M -546 0 0 0" /> 
+            </defs>
+            <g >
+             <use xlink:href="#wavepath" y="-70" fill="#29B6F6">
+             <animateMotion
+              dur="5s"
+              repeatCount="indefinite">
+              <mpath xlink:href="#motionpath" />
+             </animateMotion>
+             </use>
+            </g>
+          </svg>
+          
+
+
+    </header>
+
+    <section class="feature" id="feature">
+        <div class="app-slider">
+            <!-- Features Text Section outside the slider container -->
+            <div class="features-text">
+                <h2>Features</h2>
+                <p>Discover the amazing features of our app designed to make your experience seamless and enjoyable.</p>
+            </div>
+        
+            <!-- Slider Container -->
+            <div class="slider-container">
+                <div class="slider-wrapper">
+                    <div class="slide">
+                        <div class="slider-image">
+                            <img src="Log In.svg" alt="Feature 1">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slider-image">
+                            <img src="Sign Up.svg" alt="Feature 2">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slider-image">
+                            <img src="Map-page.svg" alt="Feature 3">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slider-image">
+                            <img src="Place Page.svg" alt="Feature 4">
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-nav">
+                    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer>
+        <div class="footer-container">
+         
+          <div class="footer-item">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjU2IDI1NiI+PGcgZmlsbD0ibm9uZSI+PHJlY3Qgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiIGZpbGw9IiNmNGYyZWQiIHJ4PSI2MCIvPjxwYXRoIGZpbGw9IiM0Mjg1ZjQiIGQ9Ik00MS42MzYgMjAzLjAzOWgzMS44MTh2LTc3LjI3M0wyOCA5MS42NzZ2OTcuNzI3YzAgNy41NDUgNi4xMTQgMTMuNjM2IDEzLjYzNiAxMy42MzYiLz48cGF0aCBmaWxsPSIjMzRhODUzIiBkPSJNMTgyLjU0NSAyMDMuMDM5aDMxLjgxOWM3LjU0NSAwIDEzLjYzNi02LjExNCAxMy42MzYtMTMuNjM2VjkxLjY3NWwtNDUuNDU1IDM0LjA5MSIvPjxwYXRoIGZpbGw9IiNmYmJjMDQiIGQ9Ik0xODIuNTQ1IDY2LjY3NXY1OS4wOTFMMjI4IDkxLjY3NlY3My40OTJjMC0xNi44NjMtMTkuMjUtMjYuNDc3LTMyLjcyNy0xNi4zNjMiLz48cGF0aCBmaWxsPSIjZWE0MzM1IiBkPSJNNzMuNDU1IDEyNS43NjZ2LTU5LjA5TDEyOCAxMDcuNTgzbDU0LjU0NS00MC45MDl2NTkuMDkxTDEyOCAxNjYuNjc1Ii8+PHBhdGggZmlsbD0iI2M1MjIxZiIgZD0iTTI4IDczLjQ5M3YxOC4xODJsNDUuNDU0IDM0LjA5MXYtNTkuMDlMNjAuNzI3IDU3LjEzQzQ3LjIyNyA0Ny4wMTYgMjggNTYuNjMgMjggNzMuNDkzIi8+PC9nPjwvc3ZnPg==" alt="Email Icon">
+            <a href="aquasphereofficial@gmail.com" target="_blank">aquasphereofficial@gmail.com</a>
+          </div>
+        
+          <div class="footer-item">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMwMjQxYTciIGQ9Ik0xMiAxMS41QTIuNSAyLjUgMCAwIDEgOS41IDlBMi41IDIuNSAwIDAgMSAxMiA2LjVBMi41IDIuNSAwIDAgMSAxNC41IDlhMi41IDIuNSAwIDAgMS0yLjUgMi41TTEyIDJhNyA3IDAgMCAwLTcgN2MwIDUuMjUgNyAxMyA3IDEzczctNy43NSA3LTEzYTcgNyAwIDAgMC03LTciLz48L3N2Zz4=" alt="Location Icon">
+            <span>Panabo City, Davao del Norte, Philippines</span>
+          </div>
+        
+          <div class="footer-item">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjYgMjYiPjxnIGZpbGw9Im5vbmUiPjxkZWZzPjxtYXNrIGlkPSJwZXBpY29uc1BvcFBob25lQ2lyY2xlRmlsbGVkMCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTAgMGgyNnYyNkgweiIvPjxwYXRoIGZpbGw9IiMwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0ibTE1LjUyIDEzLjE5MmwtLjU4MS41ODJhMzEgMzEgMCAwIDEtMi44MjctMi44M2wuNTgtLjU4YTMgMyAwIDAgMCAwLTQuMjQzbC0xLjQxNC0xLjQxNGEzIDMgMCAwIDAtNC4yNDIgMEw0LjIzIDcuNTEzQTEgMSAwIDAgMCA0IDguNTdjMi4zNzQgNi4zNiA2LjgxOCAxMC44MzQgMTMuMzA4IDEzLjMxMmExIDEgMCAwIDAgMS4wNjQtLjIyN2wyLjgwNi0yLjgwNmEzIDMgMCAwIDAgMC00LjI0MmwtMS40MTUtMS40MTVhMyAzIDAgMCAwLTQuMjQyIDBtNC4yNDQgMi44MjlhMSAxIDAgMCAxIDAgMS40MTRsLTIuMzQyIDIuMzQxYy01LjQyNC0yLjIzLTkuMTczLTYtMTEuMzE3LTExLjMxTDguNDUgNi4xMmExIDEgMCAwIDEgMS40MTQgMGwxLjQxNCAxLjQxNWExIDEgMCAwIDEgMCAxLjQxNGwtMS4yMzQgMS4yMzRhMSAxIDAgMCAwLS4wNjMgMS4zNDVhMzMgMzMgMCAwIDAgNC4zNzMgNC4zNzZhMSAxIDAgMCAwIDEuMzQ1LS4wNjNsMS4yMzYtMS4yMzVhMSAxIDAgMCAxIDEuNDE0IDB6IiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L21hc2s+PC9kZWZzPjxjaXJjbGUgY3g9IjEzIiBjeT0iMTMiIHI9IjEzIiBmaWxsPSIjMDg2OWU3IiBtYXNrPSJ1cmwoI3BlcGljb25zUG9wUGhvbmVDaXJjbGVGaWxsZWQwKSIvPjwvZz48L3N2Zz4=" alt="Phone Icon">
+            <span>+63-992-396-2962</span>
+          </div>
+          
+          <div class="footer-item">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjU2IDI1NiI+PHBhdGggZmlsbD0iIzE4NzdmMiIgZD0iTTI1NiAxMjhDMjU2IDU3LjMwOCAxOTguNjkyIDAgMTI4IDBTMCA1Ny4zMDggMCAxMjhjMCA2My44ODggNDYuODA4IDExNi44NDMgMTA4IDEyNi40NDVWMTY1SDc1LjV2LTM3SDEwOFY5OS44YzAtMzIuMDggMTkuMTEtNDkuOCA0OC4zNDgtNDkuOEMxNzAuMzUyIDUwIDE4NSA1Mi41IDE4NSA1Mi41Vjg0aC0xNi4xNEMxNTIuOTU5IDg0IDE0OCA5My44NjcgMTQ4IDEwMy45OVYxMjhoMzUuNWwtNS42NzUgMzdIMTQ4djg5LjQ0NWM2MS4xOTItOS42MDIgMTA4LTYyLjU1NiAxMDgtMTI2LjQ0NSIvPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Im0xNzcuODI1IDE2NWw1LjY3NS0zN0gxNDh2LTI0LjAxQzE0OCA5My44NjYgMTUyLjk1OSA4NCAxNjguODYgODRIMTg1VjUyLjVTMTcwLjM1MiA1MCAxNTYuMzQ3IDUwQzEyNy4xMSA1MCAxMDggNjcuNzIgMTA4IDk5LjhWMTI4SDc1LjV2MzdIMTA4djg5LjQ0NUExMjkgMTI5IDAgMCAwIDEyOCAyNTZhMTI5IDEyOSAwIDAgMCAyMC0xLjU1NVYxNjV6Ii8+PC9zdmc+" alt="Facebook Icon">
+            <a href="https://www.facebook.com/profile.php?id=61568548386712&_rdc=1&_rdr" target="_blank">Aqua Sphere</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Aqua Sphere. All rights reserved.</p>
+        </div>
+      </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>

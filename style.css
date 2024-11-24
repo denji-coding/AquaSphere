@@ -436,6 +436,8 @@ button:hover {
 
     .hero p {
         font-size: 1.2em;
+        text-wrap: wrap;
+        text-align: center;
     }
 
     .logo img {
@@ -448,7 +450,7 @@ button:hover {
         padding: 10px 20px;
     }
 
-    .highlight-item, .contact-form input, .faq-item {
+    .contact-form input{
         width: 100%;
         max-width: 100%;
     }
@@ -488,6 +490,7 @@ button:hover {
 
     svg{
         margin-top: 100px;
+       
     }
 
     ::-webkit-scrollbar{
@@ -501,6 +504,7 @@ button:hover {
     .features-text {
         text-align: center;
         padding: 10px;
+        text-wrap: wrap;
     }
 
     .features-text h2 {
@@ -511,18 +515,18 @@ button:hover {
 
     .features-text p {
         font-size: 1em;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
 
+
     .slider-container img{
-        margin-top: -250px;
-        margin-bottom: -90px;
-        margin-left: 100px;
+        margin-left: 95px;
+       
     }
 
     .app-slider {
         width: 90%; 
-        height: 95vh;
+        height: 70vh;
     }
 
 
@@ -588,6 +592,10 @@ button:hover {
         height: auto;
     }
 
+    svg{
+        margin-bottom: -700px;
+    }
+
     .about-us{
         height: inherit;
     }
@@ -640,30 +648,34 @@ button:hover {
         display: none;
     }
 
+    .feature{
+        height: inherit;
+    }
+
     .features-text {
         text-align: center;
         padding: 10px;
     }
 
     .features-text h2 {
-        margin-top: 10px;
+        margin-top: 20px;
         font-size: 1.5em; 
         margin-bottom: 10px;
     }
 
     .features-text p {
         font-size: 1em; 
-        margin-bottom: 15px;
+        margin-bottom: -30px;
     }
 
     .slider-container img{
-        margin-top: -200px;
-        margin-bottom: -20px;
+        margin-left: 140px;
+        margin-bottom: -250px;
+        
     }
-
     .app-slider {
-        width: 80%; 
-        height: 90vh;
+        width: 70%; 
+        height: inherit;
     }
 
     .slider-nav {
@@ -757,9 +769,18 @@ button:hover {
         margin-bottom: 30px;
     }
 
+    .slider-container img{
+        /* width: inherit; */
+        width: 45%;
+        margin-left: 110px;
+        margin-top: -200px;
+        /* margin-bottom: -250px; */
+        
+    }
+
     .app-slider {
         width: 60%; 
-        height: 100vh; 
+        height: 110vh; 
     }
 
     .slider-nav button {
@@ -775,3 +796,43 @@ button:hover {
     }
    
 }
+
+
+
+/* @media (min-width: 393px) {
+    svg{
+        margin-bottom: -40px ;
+    }
+
+    .slider-container img{
+        margin-top: -250px;
+        margin-left: 110px;
+       
+    }
+
+    .app-slider {
+        width: 90%; 
+        height: 65vh;
+    }
+        
+}
+
+@media (min-width: 412px) {
+    svg{
+        margin-bottom: -550px ;
+    }
+
+    .slider-container img{
+        margin-top: -210px;
+        margin-left: 115px;
+       
+    }
+
+    .app-slider {
+        width: 90%; 
+        height: 65vh;
+    }
+
+} */
+        
+

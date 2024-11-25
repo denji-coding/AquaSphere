@@ -150,12 +150,14 @@ body {
 }
 
 svg{
-    margin-top: 35px;
+    margin-top: 10px;
 }
 .hero h1 {
     color: #333;
-    font-size: 3em;
-    margin-bottom: 10px;
+    font-size: 7em;
+    font-family: cursive;
+    margin-top: -80px;
+    margin-bottom: 30px;
 }
 
 .hero p {
@@ -431,13 +433,17 @@ button:hover {
     }
 
     .hero h1 {
-        font-size: 2em;
+        font-size: 3em;
+        margin-top: inherit;
     }
 
     .hero p {
+        width: 90%;
         font-size: 1.2em;
-        text-wrap: wrap;
-        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        /* margin-left: 15px; */
+        /* text-align: center; */
     }
 
     .logo img {
@@ -473,8 +479,10 @@ button:hover {
 
     .about-us .team {
         grid-template-columns: repeat(2, 1fr); 
-        gap: 10px;
+        gap: 50px;
     }
+
+  
 
     .team-member {
         max-width: 100px;
@@ -489,7 +497,7 @@ button:hover {
     }
 
     svg{
-        margin-top: 100px;
+        margin-top: 70px;
        
     }
 
@@ -567,11 +575,15 @@ button:hover {
 
     /* Hero Section */
     .hero h1 {
-        font-size: 2.5em;
+        font-size: 4.5em;
+        margin-top: inherit;
     }
 
     .hero p {
-        font-size: 1.3em;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.5em;
     }
 
     .highlight-grid {
@@ -593,7 +605,7 @@ button:hover {
     }
 
     svg{
-        margin-bottom: -700px;
+        margin-bottom: -500px;
     }
 
     .about-us{
@@ -638,10 +650,6 @@ button:hover {
     .about-us{
         
             width: inherit;
-    }
-
-    svg{
-        margin-top: 70px;
     }
 
     ::-webkit-scrollbar{
@@ -698,7 +706,8 @@ button:hover {
     }
 
     .hero h1 {
-        font-size: 3em;
+        font-size: 7em;
+        font-family: cursive;
     }
 
     .hero p {
@@ -770,12 +779,9 @@ button:hover {
     }
 
     .slider-container img{
-        /* width: inherit; */
         width: 45%;
         margin-left: 110px;
         margin-top: -200px;
-        /* margin-bottom: -250px; */
-        
     }
 
     .app-slider {
@@ -796,43 +802,3 @@ button:hover {
     }
    
 }
-
-
-
-/* @media (min-width: 393px) {
-    svg{
-        margin-bottom: -40px ;
-    }
-
-    .slider-container img{
-        margin-top: -250px;
-        margin-left: 110px;
-       
-    }
-
-    .app-slider {
-        width: 90%; 
-        height: 65vh;
-    }
-        
-}
-
-@media (min-width: 412px) {
-    svg{
-        margin-bottom: -550px ;
-    }
-
-    .slider-container img{
-        margin-top: -210px;
-        margin-left: 115px;
-       
-    }
-
-    .app-slider {
-        width: 90%; 
-        height: 65vh;
-    }
-
-} */
-        
-

@@ -155,7 +155,7 @@ svg{
 .hero h1 {
     color: #333;
     font-size: 7em;
-    font-family: cursive;
+    /* font-family: cursive; */
     margin-top: -80px;
     margin-bottom: 30px;
 }
@@ -442,8 +442,6 @@ button:hover {
         font-size: 1.2em;
         margin-left: auto;
         margin-right: auto;
-        /* margin-left: 15px; */
-        /* text-align: center; */
     }
 
     .logo img {
@@ -707,7 +705,6 @@ button:hover {
 
     .hero h1 {
         font-size: 7em;
-        font-family: cursive;
     }
 
     .hero p {
@@ -799,6 +796,10 @@ button:hover {
     .slider-nav {
         top: 55%; 
         width: 50%;
+    }
+
+    svg{
+        margin-top: 20px;
     }
    
 }

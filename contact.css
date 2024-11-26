@@ -158,7 +158,6 @@ section {
   color: #666;
 }
 
-/* When the input or textarea is focused or has text (valid) */
 .contact-form .input-box input[type="text"]:focus ~ span,
 .contact-form .input-box input[type="email"]:focus ~ span,
 .contact-form .input-box textarea:focus ~ span,
@@ -222,7 +221,7 @@ footer .footer-item {
 
 footer img {
     width: 20px;
-    color: #fff; /* Icon size */
+    color: #fff;
 }
 
 footer .footer-item a {

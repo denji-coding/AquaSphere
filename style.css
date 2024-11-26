@@ -480,8 +480,6 @@ button:hover {
         gap: 50px;
     }
 
-  
-
     .team-member {
         max-width: 100px;
     }
@@ -535,7 +533,6 @@ button:hover {
         height: 70vh;
     }
 
-
     .slider-nav {
         display: none; 
     }
@@ -571,7 +568,6 @@ button:hover {
         display: flex;
     }
 
-    /* Hero Section */
     .hero h1 {
         font-size: 4.5em;
         margin-top: inherit;

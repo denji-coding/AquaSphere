@@ -53,7 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 function copyToClipboard() {
-    // Select the phone number
     const phoneNumber = document.getElementById('phone-number').innerText;
 
     const tempInput = document.createElement('input');

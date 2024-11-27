@@ -524,13 +524,13 @@ button:hover {
 
 
     .slider-container img{
-        margin-left: 95px;
+        margin-left: 120px;
        
     }
 
     .app-slider {
         width: 90%; 
-        height: 70vh;
+        height: 85vh;
     }
 
     .slider-nav {
@@ -599,7 +599,7 @@ button:hover {
     }
 
     svg{
-        margin-bottom: -500px;
+        margin-bottom: -100px;
     }
 
     .about-us{

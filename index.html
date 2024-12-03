@@ -6,30 +6,40 @@
     <title>Aqua Sphere</title>
     <link rel="icon" type="image/x-icon" href="TABlogo.png">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="icon">
-            <img src="logo.png" alt="Explore Paradise Logo" />
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about-us.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-    </nav>
+        <nav>
+            <a href="#home" class="logo">
+                <img src="logo.png" alt="Logo">
+            </a>
+    
+            <ul class="nav-links">
+                <div class="dropdown-logo">
+                    <a href="#home">
+                    <img src="logo.png" alt="Logo">
+                    </a>
+                </div>
+               
+                <hr>
+                
+                <li><a href="#home">Home</a></li>
+                <li><a href="#feature">Features</a></li>
+                <li><a href="about-us.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+    
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
 
     <header id="home" class="hero">
-        <h1>A-QuaTour</h1>
-        <p>Experience breathtaking landscapes, vibrant culture, and unforgettable adventures</p>
-        <a href="#feature" class="cta-button"> Explore Features</a>
+        <h1 class="pop-up">A-QuaTour</h1>
+        <p class="pop-up">Experience breathtaking landscapes, vibrant culture, and unforgettable adventures</p>
+        <a href="#feature" class="cta-button pop-up"> Explore Features</a>
         
 
         <svg width="100%" height="100%" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" overflow="auto" shape-rendering="auto" fill="#ffffff">
@@ -50,15 +60,15 @@
     </header>
 
     <section class="feature" id="feature">
-        <div class="app-slider">
-            <div class="features-text">
-                <h2>Features</h2>
-                <p>Discover the amazing features of our app designed to make your experience seamless and enjoyable.</p>
+        <div class="app-slider pop-up">
+            <div class="features-text pop-up">
+                <h2 class="pop-up">Features</h2>
+                <p class="pop-up">Discover the amazing features of our app designed to make your experience seamless and enjoyable.</p>
             </div>
         
             <div class="slider-container">
                 <div class="slider-wrapper">
-                    <div class="slide">
+                    <div class="slide pop-up">
                         <div class="slider-image">
                             <img src="Log In.svg" alt="Feature 1">
                         </div>
@@ -79,13 +89,54 @@
                         </div>
                     </div>
                 </div>
-                <div class="slider-nav">
+                <div class="slider-nav pop-up">
                     <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
                     <button class="next" onclick="moveSlide(1)">&#10095;</button>
                 </div>
             </div>
         </div>
     </section>
+
+    <section id="other" class="other">
+        <div class="container">
+            <h2 class="pop-up">Other features</h2>
+          <!-- First Content Item -->
+          <div class="content-item reverse pop-up">
+            <div class="text-container pop-up">
+              <h3 class="pop-up">Search</h3>
+              <p class="pop-up">Description of the first image. Add more details here about the image.</p>
+            </div>
+            <div class="image-container">
+              <img src="search.png" alt="First Image" class="pop-up"/>
+            </div>
+          </div>
+      
+          <!-- Second Content Item -->
+          <div class="content-item reverse pop-up">
+            <div class="text-container pop-up">
+              <h3 class="pop-up">Translate</h3>
+              <p class="pop-up">Description of the second image. Add more details here about the image.</p>
+            </div>
+            <div class="image-container">
+              <img src="translate.png" alt="Second Image" class="pop-up"/>
+            </div>
+          </div>
+      
+          <!-- Third Content Item -->
+          <div class="content-item reverse pop-up">
+            <div class="text-container pop-up">
+              <h3 class="pop-up">Settings</h3>
+              <p class="pop-up">Description of the third image. Add more details here about the image.</p>
+            </div>
+            <div class="image-container">
+              <img src="settings.png" alt="Third Image" class="pop-up"/>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      
 
     <footer>
         <div class="footer-container">

@@ -15,82 +15,91 @@ section{
 }
 
 body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-}
-
-.navbar {
-    position: fixed;
     display: flex;
-    z-index: 1000;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #29B6F6;
-    color: white;
-    padding: 10px;
-}
-
-.navbar .icon {
-    display: flex;
-    align-items: center;
-}
-
-.navbar .icon img {
-    width: 150px;
-    height: 80px;
-    margin-right: 10px;
-}
-
-.navbar .nav-links {
-    display: flex;
-    list-style: none;
-    margin-right: 30px;
-}
-
-.navbar .nav-links li {
-    margin-right: 20px;
-    padding: 10px 10px;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.navbar .nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 5px 10px;
-}
-
-.nav-links a:hover {
-    background-color: #1976D2;
-    border-radius: 5px;
-    padding: 10px;
-    transform: none;
-}
-
-.hamburger {
-    display: none;
     flex-direction: column;
-    margin-right: 10px;
-    cursor: pointer;
-    width: 30px;
-    height: 35px;
+    min-height: 100vh; /* Ensure the body spans the full viewport height */
+    margin: 0; /* Remove default body margin */
+}
+
+nav{
+    position: fixed;
+    z-index: 100;
+    right: 0;
+    left: 0;
+    padding: 20px 50px;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    background: #29B6F6;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+} 
+nav .logo{
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1em;
+}
+nav .logo img{
+    top: -30px;
+    position: absolute;
+    width: 250px;
+    height: 130px;
+    left: 10px;
+}
+nav .logo h4{
+    margin-left: 15px;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 8px 20px;
+    border-radius: 25px;
+}
+nav ul li a:hover {
+    background-color: #1976D2;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease; /* Smooth transition effect */
+}
+
+/* Hamburger menu styles */
+.hamburger {
+    position: absolute;
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    right: 15px;
+    
 }
 
 .hamburger .bar {
     width: 100%;
-    height: 5px;
-    border-radius: 20px;
+    height: 4px;
     background-color: white;
-    margin: 4px;
+    border-radius: 10px;
     transition: all 0.3s ease;
 }
 
+/* Animate hamburger menu to form X */
 .hamburger.active .bar:nth-child(1) {
     transform: rotate(45deg);
     position: relative;
-    top: 10px;
+    top: 8px;
 }
 
 .hamburger.active .bar:nth-child(2) {
@@ -100,41 +109,17 @@ body {
 .hamburger.active .bar:nth-child(3) {
     transform: rotate(-45deg);
     position: relative;
-    bottom: 13px;
+    top: -8px;
 }
 
-.nav-links {
+/* Base Styles */
+nav ul.nav-links {
     display: flex;
     list-style: none;
-    transition: all 0.3s ease;
 }
 
-.nav-links li {
-    margin-left: 50px;
-}
-
-.navbar .nav-links {
-    display: none;
-    margin-right : -10px;
-}
-.nav-links .active-item {
-    background-color: #1976D2;
-    border-radius: 5px;
-}
-
-.navbar .nav-links.show {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    background-color: #29B6F6;
-    border-radius: 5px;
-    padding: 10px;
-}
-
-.nav-links li {
-    margin: 10px 0;
+nav ul.nav-links li {
+    margin: 0 10px;
 }
 
 
@@ -177,7 +162,7 @@ svg{
     border-radius: 5px;
     transition: background-color 0.3s;
     font-size: 1.2em;
-    z-index: 100;
+    z-index: 1;
 }
 
 .cta-button:hover {
@@ -273,6 +258,7 @@ svg{
     width: 60%;  
     height: 95vh; 
     margin: 50px auto;
+    top: 100px;
     overflow: hidden;
     border: 2px solid #1da9c0;
     border-radius: 15px;
@@ -304,6 +290,7 @@ svg{
     display: flex;
     justify-content: center;
     align-items: center;
+    top: 100px;
     height: 550px;
 }
 
@@ -387,6 +374,79 @@ button:hover {
     font-size: 1.2em;
 }
 
+
+
+footer {
+    position: relative;
+    background-color: #29B6F6;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+    top: 300px;
+    height: auto; /* Ensure it adjusts according to content */
+    min-height: 100px; /* Set a minimum height if needed */
+  }
+  
+  footer .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    min-height: 0;
+    height: auto; /* Ensure this is adjusted accordingly */
+    width: 100%; /* Ensure full width */
+    max-width: 1080px; /* Restrict max width */
+    margin-left: auto;
+    margin-right: auto; /* Center the content */
+  }
+  
+  footer .footer-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  
+  footer .footer-item a {
+    text-decoration: none;
+    color: #efefef;
+    padding: 5px;
+    font-size: 16px; 
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #FFF;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .footer-item span {
+    color: #efefef;
+  }
+  
+  .footer-item span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .footer-bottom p {
+    font-size: 12px;
+    color: #efefef;
+  }
+  
+  .footer-item p, .footer-item a {
+    margin: 0;
+    font-size: 12px;
+  }
+
 ::-webkit-scrollbar{
     width: 10px;
     border-radius: 50px;
@@ -403,33 +463,122 @@ button:hover {
     background-color:#179bf3;
 }
 
+/* Initial state for hidden elements */
+.pop-up {
+    opacity: 0;
+    transform: translateY(30px); /* Start below the visible area */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+}
 
-@media (max-width: 600px) {
-   
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        margin-top: 50px;
-        width: 50%; 
-        background-color: #29B6F6;
-        border-radius: 5px;
-        text-align: center;
-        border: 2px solid gray;
-    }
+/* Visible state when the element is in view */
+.pop-up.visible {
+    opacity: 1;
+    transform: translateY(0); /* Move to its original position */
+}
 
-    .nav-links li {
-        margin: 10px 0;
-        padding-right: 50px;
-        margin-left: 20px;
-    }
 
-    .nav-links.show {
+@media only screen and (min-width: 360px) and (max-width: 600px) {
+
+  
+
+    nav ul.nav-links {
+        position: fixed; /* Fixed for slide-in effect */
+        top: 0;
+        left: -250px; /* Start from the left side, off-screen */
+        height: 100vh; /* Full screen height */
+        width: 250px; /* Width of the dropdown */
+        background: #29B6F6;
+        padding: 20px;
+        box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+        z-index: 100; /* Ensure it appears above other elements */
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        transition: left 0.3s ease; /* Smooth slide-in and slide-out */
     }
 
+    /* Apply animation when the active class is added to nav-links */
+    nav ul.nav-links.active {
+        left: 0; /* Slide to the screen */
+    }
+
+    hr {
+        width: 90%; /* Make the HR take up most of the screen width */
+        border-top: 1px solid white;
+        margin: 20px auto; /* Center the HR and give vertical spacing */
+        margin-top: -25px; /* Adjust top margin for better alignment */
+    }
+
+    nav ul.nav-links li {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    nav ul.nav-links li a {
+        padding: 8px 50px;
+        color: white;
+        text-decoration: none;
+        border-radius: 20px;
+        
+        transition: background 0.1s ease, color 0.3s ease;
+    }
+
+    nav ul.nav-links li a:hover {
+        background-color: #1976D2;
+    }
+
+    nav .logo img {
+        margin-left: -20px;
+        max-width: 150px;
+    }
+
+    .nav-links .dropdown-logo a {
+        text-decoration: none;
+    }
+
+    .nav-links .dropdown-logo {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .nav-links .dropdown-logo img {
+        max-width: 170px; /* Adjust size of the logo */
+        margin-bottom: 10px;
+    }
+
+    /* Hamburger menu styles */
     .hamburger {
         display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 25px;
+        cursor: pointer;
+        margin-top: -40px;
+        margin-bottom: -40px;
+    }
+
+    .hamburger .bar {
+        width: 100%;
+        height: 4px;
+        background-color: white;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: rotate(45deg); /* Rotate the top bar to form part of the X */
+        top: 11px; /* Adjust the position of the top bar */
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0; /* Hide the middle bar */
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: rotate(-45deg); /* Rotate the bottom bar to form the other part of the X */
+        top: -11px; /* Adjust the position of the bottom bar */
     }
 
     .hero h1 {
@@ -454,7 +603,7 @@ button:hover {
         padding: 10px 20px;
     }
 
-    .contact-form input{
+    .contact-form input {
         width: 100%;
         max-width: 100%;
     }
@@ -464,11 +613,6 @@ button:hover {
         font-size: 1em;
     }
 
-    .about-us {
-        height: inherit;
-        
-    }
-
     .about-us h2 {
         text-align: center;
         font-size: 1.5em;
@@ -476,12 +620,13 @@ button:hover {
     }
 
     .about-us .team {
-        grid-template-columns: repeat(2, 1fr); 
-        gap: 50px;
+        grid-template-columns: repeat(2, 2fr); 
+        gap: 80px;
+        
     }
 
     .team-member {
-        max-width: 100px;
+        max-width: 140px;
     }
 
     .team-member h3 {
@@ -492,16 +637,19 @@ button:hover {
         font-size: 0.7em;
     }
 
-    svg{
-        margin-top: 70px;
-       
+    .about-us{
+        height: 150vh;
     }
 
-    ::-webkit-scrollbar{
+    svg {
+        margin-top: 30px;
+    }
+
+    ::-webkit-scrollbar {
         display: none;
     }
 
-    .feature{
+    .feature {
         height: inherit;
     }
 
@@ -522,52 +670,150 @@ button:hover {
         margin-bottom: 10px;
     }
 
-
-    .slider-container img{
+    .slider-container img {
         margin-left: 120px;
-       
+        margin-top: -150px;
     }
 
     .app-slider {
-        width: 90%; 
-        height: 85vh;
+        width: 80%; 
+        height: 105vh;
     }
 
     .slider-nav {
         display: none; 
     }
-   
+
+    .about-us{
+        height: inherit;
+    }
+
+    .feature{
+        margin-bottom: 200px;
+    }
+
+    footer{
+        margin-top: 300px;
+    }
+    footer .footer-container {
+        flex-direction: column;
+        gap: 10px;
+      }
+    
+      footer img {
+        width: 18px;
+      }
+    
+      footer .footer-item a,
+      footer .footer-item span {
+        font-size: 14px;
+      }
 }
 
 
-@media (min-width: 601px) and (max-width: 1024px) {
 
-    .nav-links {
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Navbar */
+    nav ul.nav-links {
+        position: fixed;
+        top: 0;
+        left: -250px; /* Initially off-screen */
+        height: 100vh;
+        width: 250px;
+        background: #29B6F6;
+        padding: 20px;
+        box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
+        z-index: 100;
         display: flex;
         flex-direction: column;
-        position: absolute;
-        margin-top: 50px;
-        width: 40%; 
-        background-color: #29B6F6;
-        border-radius: 5px;
+        align-items: center;
+        justify-content: flex-start;
+        transition: transform 0.3s ease; /* Use transform for smoother animation */
+    }
+
+    nav ul.nav-links.active {
+        transform: translateX(250px); /* Slide the menu into view */
+    }
+
+    nav ul.nav-links li {
+        margin: 20px 0;
         text-align: center;
-        border: 2px solid gray;
     }
 
-    .nav-links li {
-        margin: 10px 0;
-        padding-right: 50px;
-        margin-left: 20px;
+    nav ul.nav-links li a {
+        padding: 8px 50px;
+        color: white;
+        text-decoration: none;
+        border-radius: 20px;
+        transition: background 0.1s ease, color 0.3s ease;
     }
 
-    .nav-links.show {
-        display: none;
+    nav ul.nav-links li a:hover {
+        background-color: #1976D2;
     }
 
+    hr {
+        width: 90%; /* Make the HR take up most of the screen width */
+        border-top: 1px solid white;
+        margin: 20px auto; /* Center the HR and give vertical spacing */
+        margin-top: -25px; /* Adjust top margin for better alignment */
+    }
+
+    /* Logo styling */
+    nav .logo img {
+        max-width: 150px;
+        margin-left: -20px;
+    }
+
+    .nav-links .dropdown-logo a {
+        text-decoration: none;
+    }
+
+    .nav-links .dropdown-logo {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .nav-links .dropdown-logo img {
+        max-width: 170px;
+        margin-bottom: 10px;
+    }
+
+    /* Hamburger Menu */
     .hamburger {
         display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 25px;
+        cursor: pointer;
+        margin-top: -40px;
+        margin-bottom: -40px;
     }
 
+    .hamburger .bar {
+        width: 100%;
+        height: 4px;
+        background-color: white;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: rotate(45deg);
+        top: 11px;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: rotate(-45deg);
+        top: -11px;
+    }
+
+    /* Hero Section */
     .hero h1 {
         font-size: 4.5em;
         margin-top: inherit;
@@ -580,29 +826,9 @@ button:hover {
         font-size: 1.5em;
     }
 
-    .highlight-grid {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .highlight-item {
-        max-width: 45%; 
-    }
-
-    .cta-button {
-        padding: 12px 24px;
-    }
-
-    .logo img {
-        max-width: 100px;
-        height: auto;
-    }
-
-    svg{
-        margin-bottom: -100px;
-    }
-
-    .about-us{
+    /* About Us Section */
+    .about-us {
+        width: inherit;
         height: inherit;
     }
 
@@ -619,7 +845,8 @@ button:hover {
     }
 
     .about-us .team {
-        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
         gap: 20px;
     }
@@ -641,19 +868,38 @@ button:hover {
         font-size: 0.9em;
     }
 
-    .about-us{
-        
-            width: inherit;
+    /* Highlight Section */
+    .highlight-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
-    ::-webkit-scrollbar{
+    .highlight-item {
+        max-width: 45%;
+    }
+
+    /* CTA Button */
+    .cta-button {
+        padding: 12px 24px;
+    }
+
+    /* Slider */
+    .slider-container img {
+        margin-left: 125px;
+        margin-bottom: -200px;
+    }
+
+    .app-slider {
+        width: 70%;
+        height: 105vh;
+    }
+
+    .slider-nav {
         display: none;
     }
 
-    .feature{
-        height: inherit;
-    }
-
+    /* Features Section */
     .features-text {
         text-align: center;
         padding: 10px;
@@ -661,29 +907,35 @@ button:hover {
 
     .features-text h2 {
         margin-top: 20px;
-        font-size: 1.5em; 
+        font-size: 1.5em;
         margin-bottom: 10px;
     }
 
     .features-text p {
-        font-size: 1em; 
+        font-size: 1em;
         margin-bottom: -30px;
     }
 
-    .slider-container img{
-        margin-left: 140px;
-        margin-bottom: -250px;
-        
-    }
-    .app-slider {
-        width: 70%; 
-        height: inherit;
-    }
-
-    .slider-nav {
+    /* Remove scrollbar */
+    ::-webkit-scrollbar {
         display: none;
     }
+
+    footer{
+        margin-top: 300px;
+    }
+
+    footer .footer-container {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+    /* Miscellaneous adjustments */
+    svg {
+        margin-bottom: -80px;
+    }
 }
+
 
 
 @media (min-width: 1025px) {
@@ -696,6 +948,10 @@ button:hover {
     }
 
     .hamburger {
+        display: none;
+    }
+
+    hr{
         display: none;
     }
 
@@ -779,7 +1035,7 @@ button:hover {
 
     .app-slider {
         width: 60%; 
-        height: 110vh; 
+        height: 115vh; 
     }
 
     .slider-nav button {
@@ -791,11 +1047,76 @@ button:hover {
 
     .slider-nav {
         top: 55%; 
-        width: 50%;
+        width: 80%;
     }
 
     svg{
         margin-top: 20px;
     }
+
+    .dropdown-logo{
+        display: none;
+    }
+
+    .dropdown-footer{
+        display: none;
+    }
    
 }
+
+
+.other{
+    width: 100%;
+    height: 150vh;
+}
+.container {
+    width: 90%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem; /* Add spacing between items */
+     margin: 0 auto;/* Center horizontally */
+    align-items: center; /* Center children horizontally */
+  }
+  
+  .content-item {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    gap: 1.5rem;
+    border: 1.5px solid #29B6F6;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content-item .text-container {
+    flex: 1;
+  }
+  
+  .content-item .image-container img {
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .content-item.reverse {
+    flex-direction: row-reverse; /* Swap the order of text and image */
+  }
+  
+  /* Ensure responsiveness */
+  @media (max-width: 768px) {
+    .content-item,
+    .content-item.reverse {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .content-item .image-container img,
+    .content-item.reverse .image-container img {
+      margin: 0 auto;
+    }
+  }
+  

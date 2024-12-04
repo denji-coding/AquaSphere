@@ -261,7 +261,7 @@ svg{
     margin: 50px auto;
     top: 100px;
     overflow: hidden;
-    border: 2px solid #1da9c0;
+    border: 2px solid #29B6F6;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     padding-bottom: 20px;
@@ -447,15 +447,6 @@ footer {
     margin: 0;
     font-size: 12px;
   }
-
-
-
-
-
-
-
-
-
 
   .aboutfooter {
     position: relative;
@@ -831,6 +822,10 @@ footer {
       .aboutfooter .about-footer-item span {
         font-size: 14px;
       }
+
+      .mvg div {
+        width: 90%; /* Use more available width on smaller screens */
+    }
     }
 
 
@@ -1205,7 +1200,7 @@ footer {
 
 .other{
     width: 100%;
-    height: 150vh;
+    height: 100vh;
 }
 .container {
     width: 90%;
@@ -1235,14 +1230,18 @@ footer {
 
   h2{
     margin-top: 50px;
+    font-size: 2.5em;
   }
   .content-item .text-container  h3{
     text-align: center;
     font-size: 2rem;
     margin-bottom: 30px;
+    color: #333;
   }
   .content-item .text-container  p{
+    color: #555;
     text-align: justify;
+    color: rgb(105, 103, 103);
   }
   
   .content-item .image-container img {
@@ -1273,4 +1272,43 @@ footer {
         margin-top: 500px;
     }
   }
+
+
+  .mvg {
+    position: relative;
+    top: 30px;
+    display: flex;
+    flex-direction: column; /* Stack mission, vision, and goal vertically */
+    align-items: center;
+    gap: 50px; /* Add spacing between the containers */
+    padding: 20px;
+    
+}
+
+.mvg div {
+    width: 80%; /* Ensure each section is not too wide */
+    max-width: 600px; /* Set a maximum width for better readability */
+    text-align: center; /* Center text inside each section */
+    padding: 20px;
+    border: 1.5px solid #29B6F6; /* Optional: Add a border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #fff; /* Background for each container */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+}
+
+.mvg h2 {
+    position: relative;
+    top: -30px;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.mvg p {
+    text-align: justify;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+}
+
   

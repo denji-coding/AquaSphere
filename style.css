@@ -17,6 +17,7 @@ section{
 body {
     display: flex;
     flex-direction: column;
+    height: 100%;
     min-height: 100vh; /* Ensure the body spans the full viewport height */
     margin: 0; /* Remove default body margin */
 }
@@ -447,6 +448,109 @@ footer {
     font-size: 12px;
   }
 
+
+
+
+
+
+
+
+
+
+  .aboutfooter {
+    position: relative;
+    background-color: #29B6F6;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+    top: 300px;
+    height: auto; /* Ensure it adjusts according to content */
+    min-height: 100px; /* Set a minimum height if needed */
+  }
+  
+  .aboutfooter .about-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    min-height: 0;
+    height: auto; /* Ensure this is adjusted accordingly */
+    width: 100%; /* Ensure full width */
+    max-width: 1080px; /* Restrict max width */
+    margin-left: auto;
+    margin-right: auto; /* Center the content */
+  }
+  
+  .aboutfooter .about-footer-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  
+  .aboutfooter .about-footer-item a {
+    text-decoration: none;
+    color: #efefef;
+    padding: 5px;
+    font-size: 16px; 
+    transition: color 0.3s ease;
+  }
+  
+  .about-footer-item a:hover {
+    color: #FFF;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .about-footer-bottom {
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .about-footer-item span {
+    color: #efefef;
+  }
+  
+  .about-footer-item span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .about-footer-bottom p {
+    font-size: 12px;
+    color: #efefef;
+  }
+  
+  .about-footer-item p, .about-footer-item a {
+    margin: 0;
+    font-size: 12px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ::-webkit-scrollbar{
     width: 10px;
     border-radius: 50px;
@@ -477,7 +581,8 @@ footer {
 }
 
 
-@media only screen and (min-width: 360px) and (max-width: 600px) {
+
+@media only screen and (max-width: 600px) {
 
     nav ul.nav-links {
         position: fixed; /* Fixed for slide-in effect */
@@ -601,10 +706,7 @@ footer {
         padding: 10px 20px;
     }
 
-    .contact-form input {
-        width: 100%;
-        max-width: 100%;
-    }
+   
 
     .about-us .contentP {
         width: 80%;
@@ -618,13 +720,13 @@ footer {
     }
 
     .about-us .team {
-        grid-template-columns: repeat(2, 2fr); 
-        gap: 80px;
+        grid-template-columns: repeat(2, 1fr); 
+        gap:45px;
         
     }
 
     .team-member {
-        max-width: 140px;
+        max-width: 120px;
     }
 
     .team-member h3 {
@@ -670,13 +772,13 @@ footer {
 
     .slider-container img {
         width: fit-content;
-        margin-left: 90px;
+        margin-left: 75px;
         margin-top: -100px;
     }
 
     .app-slider {
         width: 90%; 
-        height: 700px;
+        height: 675px;
     }
 
     .slider-nav {
@@ -692,8 +794,9 @@ footer {
     }
 
     footer{
-        margin-top: 500px;
+        width: 100%;
     }
+    
     footer .footer-container {
         flex-direction: column;
         gap: 10px;
@@ -707,7 +810,29 @@ footer {
       footer .footer-item span {
         font-size: 14px;
       }
-}
+
+      .footer{
+        margin-top: 600px;
+      }
+
+      .aboutfooter{
+        margin-top: -300px;
+    }
+    .aboutfooter .about-footer {
+        flex-direction: column;
+        gap: 10px;
+      }
+    
+      .aboutfooter img {
+        width: 18px;
+      }
+    
+      .aboutfooter .about-footer-item a,
+      .aboutfooter .about-footer-item span {
+        font-size: 14px;
+      }
+    }
+
 
 
 
@@ -885,13 +1010,15 @@ footer {
 
     /* Slider */
     .slider-container img {
-        margin-left: 125px;
-        margin-bottom: -200px;
+        width: fit-content;
+        margin-left: 80px;
+        margin-top: 400px;
+        margin-bottom: 300px;
     }
 
     .app-slider {
         width: 70%;
-        height: 105vh;
+        height: 125vh;
     }
 
     .slider-nav {
@@ -921,7 +1048,7 @@ footer {
     }
 
     footer{
-        margin-top: 300px;
+        margin-top: 100px;
     }
 
     footer .footer-container {
@@ -932,6 +1059,10 @@ footer {
     /* Miscellaneous adjustments */
     svg {
         margin-bottom: -80px;
+    }
+
+    .aboutfooter{
+        margin-top: -250px;
     }
 }
 
@@ -1060,6 +1191,14 @@ footer {
     .dropdown-footer{
         display: none;
     }
+    
+   footer{
+    margin-top: 50px;
+   }
+
+    .aboutfooter{
+        margin-top: -250px;
+    }
    
 }
 
@@ -1074,7 +1213,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 4rem; /* Add spacing between items */
-     margin: 0 auto;/* Center horizontally */
+    margin: 0 auto;/* Center horizontally */
     align-items: center; /* Center children horizontally */
   }
   
@@ -1092,6 +1231,18 @@ footer {
   
   .content-item .text-container {
     flex: 1;
+  }
+
+  h2{
+    margin-top: 50px;
+  }
+  .content-item .text-container  h3{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  .content-item .text-container  p{
+    text-align: justify;
   }
   
   .content-item .image-container img {
@@ -1116,6 +1267,10 @@ footer {
     .content-item .image-container img,
     .content-item.reverse .image-container img {
       margin: 0 auto;
+    }
+
+    footer{
+        margin-top: 500px;
     }
   }
   

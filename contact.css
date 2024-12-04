@@ -197,76 +197,71 @@ section {
 }
 
 
-@media only screen and (min-width: 459px) and (max-width:600px) { 
-    .section-header h2 {
+@media only screen and (min-width: 360px) and (max-width: 600px) { 
+  .section-header h2 {
       font-size: 2em;
-    }
-  
-    .contact-info {
+  }
+
+  .container {
+      display: flex;
+      flex-direction: column; /* Change to column for vertical centering */
+      align-items: center;   /* Horizontally center child elements */
+      justify-content: center; /* Vertically center child elements */
+  }
+
+  .contact-info {
       width: 100%;
       text-align: center;
-    }
-  
-    .contact-info-item {
+  }
+
+  .contact-info-item {
       flex-direction: column;
       align-items: center;
       text-align: center;
-    }
-  
-    .contact-info .contact-info-item h2 {
+  }
+
+  .contact-info .contact-info-item h2 {
       font-size: 3em;
       margin: 10px 0;
-    }
-  
-    .contact-info-content {
-      margin-left: 0;
+  }
+
+  .contact-info-content {
+      margin: 0 auto; /* Centers the content */
       text-align: center;
-    }
-  
-    .contact-info-content p {
+  }
+
+  .contact-info-content p {
       width: 80%;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 0 auto; /* Centers the text */
       font-size: 1em;
-    }
-  
-    .contact-form {
+  }
+
+  .contact-form {
       padding: 20px;
-      margin-top: -70px; 
+      margin: 20px auto; /* Centers the form container */
       width: 70%;
-      margin-left: auto;
-      margin-right: auto;
       position: relative;
-    }
-  
-    .contact-form h2 {
+      display: flex;
+      flex-direction: column; /* Align form fields vertically */
+      align-items: center; /* Horizontally center form fields */
+  }
+
+  .contact-form h2 {
       font-size: 1.5em;
       text-align: center;
-    }
-  
-    .contact-form .input-box input,
-    .contact-form .input-box textarea {
-      font-size: 14px;
-    }
-  
-    .contact-form .input-box input[type="submit"] {
-      font-size: 16px;
-    }
-  
-    footer .footer-container {
-      flex-direction: column;
-      gap: 10px;
-    }
-  
-    footer img {
-      width: 18px;
-    }
-  
-    footer .footer-item a,
-    footer .footer-item span {
-      font-size: 14px;
-    }
   }
+
+  .contact-form .input-box input,
+  .contact-form .input-box textarea {
+      font-size: 14px;
+      width: 100%; /* Make input and textarea full width */
+  }
+
+  .contact-form .input-box input[type="submit"] {
+      font-size: 16px;
+  }
+}
+
   
   @media (min-width: 601px) and (max-width: 1024px) {
   
@@ -285,10 +280,9 @@ section {
     }
   
     .contact-info-content p {
-        width: 80%; 
-        margin-left: auto;
-        margin-right: 10px;
-        font-size: 1.1em;
+      text-align: center; /* Centers text inside the <p> element */
+      margin: 0 auto; /* Centers the <p> element itself horizontally */
+      font-size: 1.1em; /* Adjust font size if necessary */
         
       }
   
@@ -299,25 +293,14 @@ section {
         width: 60%; 
         margin-left: auto;
         margin-right: auto;
+    }
   
     .contact-form h2 {
       font-size: 1.8em;
     }
   
-    footer .footer-container {
-      gap: 15px;
-    }
-  
-    footer img {
-      width: 20px;
-    }
-  
-    footer .footer-item a,
-    footer .footer-item span {
-      font-size: 14px;
-    }
   }
-}
+
   
   @media (min-width: 1025px) {
     .contact-info {

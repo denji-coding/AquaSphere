@@ -1,0 +1,93 @@
+/* Feature Section Styles */
+.feature {
+    width: 100%;
+    padding: 50px 20px;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Feature Container */
+.feature-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Feature Header and Description */
+.feature-content {
+    margin-bottom: 30px;
+}
+
+.feature-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #29B6F6;
+}
+
+.feature-content p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Image Carousel Styling */
+.feature-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+.carousel img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Carousel Hover Effect */
+.carousel img:hover {
+    transform: scale(1.1);
+}
+
+/* For Responsive Layout */
+@media (max-width: 768px) {
+    .feature-container {
+        width: 90%;
+    }
+
+    .feature-content h2 {
+        font-size: 2em;
+    }
+
+    .feature-content p {
+        font-size: 1em;
+    }
+
+    .carousel img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel img {
+        width: 150px;
+        height: 150px;
+    }
+}

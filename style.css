@@ -479,8 +479,6 @@ footer {
 
 @media only screen and (min-width: 360px) and (max-width: 600px) {
 
-  
-
     nav ul.nav-links {
         position: fixed; /* Fixed for slide-in effect */
         top: 0;
@@ -671,13 +669,14 @@ footer {
     }
 
     .slider-container img {
-        margin-left: 120px;
-        margin-top: -150px;
+        width: fit-content;
+        margin-left: 90px;
+        margin-top: -100px;
     }
 
     .app-slider {
-        width: 80%; 
-        height: 105vh;
+        width: 90%; 
+        height: 700px;
     }
 
     .slider-nav {
@@ -693,7 +692,7 @@ footer {
     }
 
     footer{
-        margin-top: 300px;
+        margin-top: 500px;
     }
     footer .footer-container {
         flex-direction: column;

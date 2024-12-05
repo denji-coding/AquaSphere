@@ -836,7 +836,7 @@ footer {
     nav ul.nav-links {
         position: fixed;
         top: 0;
-        left: -280px; /* Initially off-screen */
+        left: -260px; /* Initially off-screen */
         height: 100vh;
         width: 260px;
         background: #29B6F6;
